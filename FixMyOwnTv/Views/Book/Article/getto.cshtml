@@ -1,0 +1,22 @@
+﻿<nav>
+    <ul class="breadcrumb">
+        
+        <li>Learning Center<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>Replacing Parts<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>@ViewBag.gettoMenuPick</li>
+    </ul>
+</nav>
+<article>
+
+    <header>
+        <h1 itemprop="headline">How Do I Get To the Circuit Boards in a TV?</h1>
+         
+    </header>
+    <section itemprop="articleBody">
+        <p>The circuit boards in virtually every television set are accessible by removing the rear (back) cover.  The back cover is held in place with screws, which are commonly Philips-head.  On the old consoles and projection TVs the back covers were easy to remove.</p>
+        @Html.Partial("Article/FlatScreenRepairPreparation")
+        <br />
+        <p>If you plan on powering up the TV with the back cover removed, take heed to the following warning.</p>
+        <br />@Html.Partial("Article/DangerHighVoltage")
+    </section>
+</article>

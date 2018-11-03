@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WebCam Live</title>
+</head>
+<body>
+
+
+    <script type="text/javascript">
+    var height_array = new Array();
+    var width_array = new Array();
+    width_array[1] = 640;
+    height_array[1] = 480;
+    </script>
+    <img src="http://www.fixmyowntv.com/cam_1.jpg" class="webcam" id="webcam1" width="640" height="480" alt="Live Stream" />
+    <script type="text/javascript">
+        <!--
+        DoIt1(1);
+        document.images.webcam1.onload = DoIt1(2);
+        function LoadImage1(x)
+        {
+            uniq1 = Math.random();
+            document.images.webcam1.src = "http://www.fixmyowntv.com/cam_1.jpg?uniq=" + uniq1;
+            document.images.webcam1.onload = function () {
+                x = uniq1;
+                DoIt1(x);
+                };
+            document.images.webcam1.onerror = function () {
+                document.images.webcam1.src = "http://www.fixmyowntv.com/cam_1.jpg?uniq=" + x;
+            };
+        }
+
+        function DoIt1(x)
+        {
+                window.setTimeout("LoadImage1(" + x + ");", 2000);
+        }
+        //-->
+    </script>
+
+
+</body>
+</html>

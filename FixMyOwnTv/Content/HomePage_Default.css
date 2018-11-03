@@ -1,0 +1,403 @@
+﻿
+/* margin: top right bottom left */
+
+                    /* Default.aspx */
+body {
+    background-color: transparent;
+    /*background-image: url(../Images/Graphics/Workbench2_watermark4.jpg);*/
+    background-size: 100%;
+    background-attachment:fixed;
+    font-size: 16px;
+    font-family: "Helvetica Neue", "Segoe UI", Verdana, "Lucida Grande", "Lucida Sans Unicode", Arial, Calibri, Sans-Serif;
+}
+#page {
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+                    /* headerDefault.ascx */
+p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+h1, h2 {
+    text-align:center;
+}
+
+h4 {
+    clear: both;
+}
+
+.mediumAdVerticalMargin {
+    margin-bottom:40px;
+}
+
+.mobileMenuHeading {
+    font-family:"Arial Black";
+    color:#008080;
+}
+
+.btn {
+     margin-bottom:12px;
+     border:1px solid #335555;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+a {
+    height:30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+p a {
+    text-decoration: underline;
+    color: #0000ff;
+    font-family:inherit;
+}
+article td > a {
+    text-decoration: underline;
+    color: #0000ff;
+    font-family:inherit;
+}
+article ul > li > a {
+    text-decoration: underline;
+    color: #0000ff;
+    font-family:inherit;
+}
+
+div[id='navBar'] > div > ul, div[id='navBar2'] > div > ul, ul.breadcrumb, ul.breadcrumb2 {
+    background-color: transparent !important;
+}
+
+#ArticleContainer > nav > ul {
+    margin-left: 0px;
+}
+
+
+#buttonArray > div > div > ul > li.btn.btn-info.dropdown.open > ul, #buttonArray > div > div > ul > li.btn.btn-success.dropdown.open > ul {
+    position:absolute; 
+    left:-50px;
+}
+
+ul.breadcrumb, ul.breadcrumb2 {
+    text-align: center;
+}
+ul.breadcrumb li {
+    list-style: none;
+    font-size:12px;
+    padding:0px;
+    display: inline;
+    color: green;
+}
+
+#ArticleContainer nav > ul > li:last-child {
+    font-weight:bold;
+}
+
+ul.breadcrumb2 li {
+    list-style: none;
+    font-size:12px;
+    padding:0px;
+    display: inline;
+    color: darkcyan;
+}
+
+#ArticleContainer > nav > ul > li:nth-child(1) {
+    opacity: 0.7;
+    position: relative;
+    top: 2px;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?40191681');
+    src: url('./font/fontello.eot?40191681#iefix') format('embedded-opentype'),
+        url('./font/fontello.woff?40191681') format('woff'),
+        url('./font/fontello.ttf?40191681') format('truetype'),
+        url('./font/fontello.svg?40191681#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.demo-icon
+{
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+     
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+     
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+     
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+     
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+     
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+     
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+#___gcse_0 > div > div > form > table.gsc-search-box > tbody > tr > td.gsc-search-button > input {
+    background-color: #60C160;
+    color: white;
+}
+
+#gs_tti50 {
+    padding: 0px 0px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+#gsc-iw-id1 {
+    border-radius: 5px;
+    border: 1px solid #59bedc;
+}
+
+
+.checked {
+    color: orange;
+}
+
+.fa-star {
+    font-size: 36px !important;
+}
+.fa-star:hover {
+    cursor: pointer;
+}
+
+            /*  Small Phones - Fluid columns, no fixed widths */
+            @media all and (max-width:310px) {
+                #TextBoxAd {
+                    display: none;
+                }
+
+                #InLineAdDiv_small {
+                    display: inline-block;
+                }
+
+                #mobileLogo {
+                    display: inline;
+                }
+
+                #bigLogo {
+                    display: none;
+                }
+
+                #mobileLeftAd {
+                    display: none;
+                }
+
+                #rightColumnLarge {
+                    display: none;
+                }
+
+                #defaultPictures {
+                    display: none;
+                }
+
+                #dropdown-menu {
+                    margin-bottom: 10px;
+                }
+
+                .dynamic-width {
+                    width: 100%;
+                }
+            }
+            /*  Phones - Fluid columns, no fixed widths */
+            @media all and (min-width:311px) and (max-width:524px) {
+                #mobileLogo {
+                    display: inline;
+                }
+
+                #bigLogo {
+                    display: none;
+                }
+
+                #mobileLeftAd {
+                    display: none;
+                }
+
+                #rightColumnLarge {
+                    display: none;
+                }
+
+                #defaultPictures {
+                    display: none;
+                }
+
+                #dropdown-menu {
+                    margin-bottom: 10px;
+                }
+
+                .dynamic-width {
+                    width: 100%;
+                }
+            }
+            /*  Phones to tablets - Fluid columns, no fixed widths */
+            @media all and (min-width:525px) and (max-width:767px) {
+                #mobileLogo {
+                    display: inline;
+                }
+
+                #bigLogo {
+                    display: none;
+                }
+
+                #mobileLeftAd {
+                    display: inline;
+                }
+
+                #rightColumnLarge {
+                    display: none;
+                }
+
+                #defaultPictures {
+                    display: none;
+                }
+
+                #dropdown-submenu {
+                    margin-bottom: 10px;
+                }
+
+                .dynamic-width {
+                    width: 70%;
+                }
+            }
+            /*  Portrait tablets - Column width 42px - Gutter width 20px */
+            @media all and (min-width:768px) and (max-width:979px) {
+                #mobileLogo {
+                    display: none;
+                }
+
+                #bigLogo {
+                    display: inline;
+                }
+
+                #mobileLeftAd {
+                    display: inline;
+                }
+
+                #rightColumnLarge {
+                    display: inline;
+                }
+
+                #defaultPictures {
+                    display: inline;
+                }
+
+                #dropdown-submenu {
+                    margin-bottom: 0px;
+                }
+            }
+            /*  Default - Column width 60px - Gutter width 20px */
+            @media all and (min-width:980px) and (max-width:1199px) {
+                #mobileLogo {
+                    display: none;
+                }
+
+                #bigLogo {
+                    display: inline;
+                }
+
+                #mobileLeftAd {
+                    display: inline;
+                }
+
+                #rightColumnLarge {
+                    display: inline;
+                }
+
+                #defaultPictures {
+                    display: inline;
+                }
+
+                #dropdown-submenu {
+                    margin-bottom: 0px;
+                }
+            }
+            /* Large display - Column width 70px - Gutter width 30px*/
+            @media all and (min-width:1200px) {
+                #mobileLogo {
+                    display: none;
+                }
+
+                #bigLogo {
+                    display: inline;
+                }
+
+                #mobileLeftAd {
+                    display: inline;
+                }
+
+                #rightColumnLarge {
+                    display: inline;
+                }
+
+                #defaultPictures {
+                    display: inline;
+                }
+
+                #dropdown-submenu {
+                    margin-bottom: 0px;
+                }
+            }
+
+
+            @media print {
+                #body {
+                    width: 660px;
+                }
+
+                #page {
+                    width: 660px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+
+                #header {
+                    width: 660px;
+                }
+
+                .nav {
+                    display: none;
+                    width: 0px;
+                }
+
+                #rightColumnLarge {
+                    display: none;
+                }
+
+                #mainContent {
+                    width: 660px;
+                }
+
+                #footer {
+                    width: 660px;
+                }
+            }
+

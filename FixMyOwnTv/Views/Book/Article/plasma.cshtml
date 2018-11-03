@@ -1,0 +1,34 @@
+﻿<nav>
+    <ul class="breadcrumb">
+        
+        <li>Learning Center<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>Replacing Parts<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>@ViewBag.plasmaMenuPick</li>
+    </ul>
+</nav>
+<article>
+
+    <header>
+        <h1 itemprop="headline">How To Replace a Plasma Display Panel</h1>
+         
+    </header>
+    <section itemprop="articleBody">
+        <p>This article describes the process of replacing a plasma TV screen. If you are not sure if you should replace it, read <a id="lnkWorthIt" href="http://www.fixmyowntv.com/worth-fixing" target="_self">Is My TV Worth Fixing?</a>. For <strong>LED or LCD TVs</strong>, go to <a  href="http://www.fixmyowntv.com/lcd" target="_self">LCD / LED Screen Replacement</a>. If you're not sure what kind of TV you have, see <a  href="http://www.fixmyowntv.com/lcd-plasma" target="_self">Is my TV an LCD, LED or Plasma?</a>.</p>
+        @Html.Partial("Article/ThingsToConsider")
+        <p>The replacement panel usually has one or two large plastic support structures mounted to it. They give the panel rigid support during shipping, and they make it easier to carry. Remove the plastic structure(s), usually held on with only four screws. Save the screws - you may need to use them to mount the defective panel back in the shipping carton if it needs to be returned to the supplier to receive reimbursement for the core charge.</p>
+        <p>The front face on some replacement plasma panels may also have a clear, protective peel-away sheet over it. Find the corner with the finger grip and remove the protective peel-away sheet.</p>
+        @Html.Partial("Article/PanelsFromDifferentManufactures")
+        @Html.Partial("Article/FlatScreenRepairPreparation")
+        <h4>Replacing the Plasma Panel</h4>
+        <p>With the back cover removed, you will now begin dismantling the TV in order to free up the panel assembly. You may want to take pictures of how things look as you go along. First, if there is a metal plate that supports the mounting stand, remove it. Next, you will be removing one or two circuit boards. The main board (the board with all the jacks and ports on it) will definitely need to come off because the main board (sometimes called the signal board) never comes with replacement panels. And unless there is a power board already on the replacement panel, you'll have to remove the power board from the original panel as well. There is useful information about unhooking cables from circuit boards in the article, <a id="lnkBoards"  href="http://www.fixmyowntv.com/boards" target="_self">Replacing Circuit Boards</a>.</p>
+        <br />The inside of the TV should look something like this:
+        <figure id="picture1"><img alt="" src="@VirtualPathUtility.ToAbsolute("/Images/photos/DSCI0107.jpg")" /></figure>
+        <p>Sometimes the original and the replacement panel assemblies will not look alike. The circuit boards on the replacement panel may not be identical to the boards on the original panel. Don’t be alarmed – you probably received a substitute, which is generally not a bad thing considering that the sub is usually an improved version of the original assembly. It should all still connect up just fine to the main board and the power board. You could go ahead and mount them onto the replacement assembly at this time, just to make sure the new panel is compatible with the original. </p>
+        <p>Remove the screws and any hardware around the perimeter of the panel holding it to the bezel (frame). Disconnect any wiring between the bezel and the chassis. Now you (and your assistant, if needed) should be able to lift the panel away from the bezel and set it aside. Don't forget to use proper precautions when handling a plasma panel (i.e., do not flex, bend or torque the panel).  This should leave the bezel by itself.</p>
+        <aside id='InLineAd3' style='text-align:center; '></aside>
+        <p>Now you are ready to install the replacement panel. If the front glass piece stays with the bezel, you may want to take a feather duster and dust it before you place the replacement panel on it. Take the replacement panel and place it into the bezel. Then put everything back together again in the reverse order. If you haven’t already done so, remove the main board (and also the power board in most cases) from the original panel, mount them in the replacement panel, and connect all the cables.</p>
+        <p>If you were billed for a core charge, you will need to ship the original panel back so this charge can be reimbursed. Mount the plastic support structure(s) that came with the replacement panel onto the original panel, and pack it in the box from which the replacement panel came.</p>
+        <p>If the replacement panel did not come with a power board, and you had to take the one from the original panel and mount it in the replacement panel, then it’s voltages will need to be checked and possibly adjusted to match what the replacement panel needs. Follow the special instructions entitled 'Power Supply Boards for Plasma TVs' in the article, <a id="lnkBoards2"  href="http://www.fixmyowntv.com/boards" target="_self">Replacing Circuit Boards</a>.</p>
+        <br />
+    </section>
+</article>

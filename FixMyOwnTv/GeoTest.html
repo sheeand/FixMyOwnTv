@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoTest</title>
+    <style>
+        #divGeoDisplay 
+        {
+            font: 48px Arial;
+            width:1200px;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+            padding-left:20px;
+        }
+        #divMap 
+        {
+            width:1200px;
+            margin-left:auto;
+            margin-right:auto;
+            display:block;
+            padding-left:20px;
+        }
+    </style>
+    <script>
+        var watcher;
+        var geoLoc;
+        var lat = 0.0;
+        var lon = 0.0;
+        var accur = 0.0;
+        window.onload = function () {
+            x = document.getElementById("divGeoDisplay");
+            if (navigator.geolocation) {
+                geoLoc = navigator.geolocation;
+                var posOptions = { frequency: 30000, maximumAge: 0, timeout: 60000, enableHighAccuracy: true };
+                watcher = geoLoc.watchPosition(SuccessCallBack, ErrorCallBack, posOptions);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+        }
+        function SuccessCallBack(pos) {
+            while (pos.coords.heading == 0) { };
+            if (x.hasChildNodes())
+            {
+                x.removeChild(x.firstChild);
+            }
+            var divInnerHtml = document.createElement("divGeoDisplay");
+            var dir = "";
+            if (pos.coords.heading < 11.25)
+            {
+                dir = "N"
+            } else if (pos.coords.heading < 33.75) {
+                dir = "NNE"
+            } else if (pos.coords.heading < 56.25) {
+                dir = "NE"
+            } else if (pos.coords.heading < 78.75) {
+                dir = "ENE"
+            } else if (pos.coords.heading < 101.75) {
+                dir = "E"
+            } else if (pos.coords.heading < 123.75) {
+                dir = "ESE"
+            } else if (pos.coords.heading < 146.25) {
+                dir = "SE"
+            } else if (pos.coords.heading < 168.75) {
+                dir = "SSE"
+            } else if (pos.coords.heading < 191.25) {
+                dir = "S"
+            } else if (pos.coords.heading < 213.75) {
+                dir = "SSW"
+            } else if (pos.coords.heading < 236.25) {
+                dir = "SW"
+            } else if (pos.coords.heading < 258.75) {
+                dir = "WSW"
+            } else if (pos.coords.heading < 281.25) {
+                dir = "W"
+            } else if (pos.coords.heading < 303.75) {
+                dir = "WNW"
+            } else if (pos.coords.heading < 326.25) {
+                dir = "NW"
+            } else if (pos.coords.heading < 348.75) {
+                dir = "NNW"
+            } else {
+                dir = "N"
+            }
+            lat = Math.round(pos.coords.latitude * 10000) / 10000;
+            lon = Math.round(pos.coords.longitude * 10000) / 10000;
+            divInnerHtml.innerHTML = "<table><tr><td>Current situation:</td><td></td></tr><tr><td>&nbsp;</td></tr><tr><td>Speed: </td><td>" + Math.round(pos.coords.speed * 22.3694) / 10 + " mph</td></tr><tr><td>Altitude: </td><td>" + Math.round(pos.coords.altitude * 3.28084) + " ft</td></tr><tr><td>Heading: </td><td>" + dir + "</td></tr><tr><td>&nbsp;</td></tr><tr><td>Latitude: </td><td>" + lat + "</td></tr><tr><td>Longitude: </td><td>" + lon + "</td></tr><tr><td>Accuracy:  </td><td>" + Math.floor(accur * 328.084) / 100 + " ft</td></tr></table>";
+                x.appendChild(divInnerHtml);
+                accur = pos.coords.accuracy;
+        }
+        function ErrorCallBack(err) {
+            var divInnerHtml = document.createElement("divGeoDisplay");
+            divInnerHtml.innerHTML = "Error: " + err.message + "<br />Code: " + err.code + "<br />";
+            x.appendChild(divInnerHtml);
+        }
+    </script>
+</head>
+<body>
+    <br />
+    <div id="divGeoDisplay"></div>
+</body>
+</html>

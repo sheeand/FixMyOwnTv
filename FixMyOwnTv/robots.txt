@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: http://www.fixmyowntv.com/Error/*
+Disallow: http://www.fixmyowntv.com/HTML/*
+Disallow: http://www.fixmyowntv.com/flatscreenrepairpreparation
+Disallow: http://www.fixmyowntv.com/panelsfromdifferentmanufactures
+Disallow: http://www.fixmyowntv.com/thingstoconsider
+Disallow: http://www.fixmyowntv.com/daves
+Disallow: http://www.fixmyowntv.com/dangerhighvoltage
+Disallow: http://www.fixmyowntv.com/WebCamLive.html
+Disallow: http://www.fixmyowntv.com/cam_1.jpg
+Disallow: http://www.fixmyowntv.com/loading.jpg
+Disallow: http://www.fixmyowntv.com/GeoTest.html
+Sitemap: http://www.fixmyowntv.com/sitemap_google.xml

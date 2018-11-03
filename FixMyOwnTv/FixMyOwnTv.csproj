@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7117B27-E308-4BA5-ABAD-F4A4C939A321}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FixMyOwnTv</RootNamespace>
+    <AssemblyName>FixMyOwnTv</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.30506.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BookController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\RatingController.cs" />
+    <Compile Include="DAL.cs">
+      <DependentUpon>DAL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DAL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DAL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Library\Search.cs" />
+    <Compile Include="Models\Page.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ad\BestBuy1.html" />
+    <Content Include="Ad\BestBuy2.html" />
+    <Content Include="Ad\EBay.html" />
+    <Content Include="Ad\EBay2.html" />
+    <Content Include="Ad\MyFeaturedAd.html" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Font\fontello.svg" />
+    <Content Include="Content\HomePage_Default.css" />
+    <Content Include="Content\Font\fontello.eot" />
+    <Content Include="Content\Font\fontello.ttf" />
+    <Content Include="Content\Font\fontello.woff" />
+    <Content Include="Content\Font\fontello.woff2" />
+    <Content Include="Content\bootstrap-responsive.min.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\glyphicons-halflings-white.png" />
+    <Content Include="Content\img\glyphicons-halflings.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="GeoTest.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Graphics\CrosshatchPattern.png" />
+    <Content Include="Images\Graphics\MyFeaturedAd.png" />
+    <Content Include="Images\Graphics\myTvTestPatternsLogo2.png" />
+    <Content Include="Images\Graphics\myTvTestPatternsLogoSmall.png" />
+    <Content Include="Images\Graphics\PartsBins_watermark.jpg" />
+    <Content Include="Images\Graphics\Workbench2_watermark.jpg" />
+    <Content Include="Images\Graphics\Workbench2_watermark2.jpg" />
+    <Content Include="Images\Graphics\Workbench2_watermark3.jpg" />
+    <Content Include="Images\Graphics\Workbench2_watermark4.jpg" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Book\Article\aboutus.cshtml" />
+    <Content Include="Views\Book\Article\antennas.cshtml" />
+    <Content Include="Views\Book\Article\boards.cshtml" />
+    <Content Include="Views\Book\Article\books.cshtml" />
+    <Content Include="Views\Book\Article\burnIn.cshtml" />
+    <Content Include="Views\Book\Article\buzzing.cshtml" />
+    <Content Include="Views\Book\Article\colors.cshtml" />
+    <Content Include="Views\Book\Article\could.cshtml" />
+    <Content Include="Views\Book\Article\cycling.cshtml" />
+    <Content Include="Views\Book\Article\danger.cshtml" />
+    <Content Include="Views\Book\Article\dangerhighvoltage.cshtml" />
+    <Content Include="Views\Book\Article\daves.cshtml" />
+    <Content Include="Views\Book\Article\dead.cshtml" />
+    <Content Include="Views\Book\Article\default.cshtml" />
+    <Content Include="Views\Book\Article\dlp.cshtml" />
+    <Content Include="Views\Book\Article\engines.cshtml" />
+    <Content Include="Views\Book\Article\equipment.cshtml" />
+    <Content Include="Views\Book\Article\faqs.cshtml" />
+    <Content Include="Views\Book\Article\flats.cshtml" />
+    <Content Include="Views\Book\Article\flatscreenrepairpreparation.cshtml" />
+    <Content Include="Views\Book\Article\getto.cshtml" />
+    <Content Include="Views\Book\Article\hookedup.cshtml" />
+    <Content Include="Views\Book\Article\iaud.cshtml" />
+    <Content Include="Views\Book\Article\intsignal.cshtml" />
+    <Content Include="Views\Book\Article\keypad.cshtml" />
+    <Content Include="Views\Book\Article\lampfailure.cshtml" />
+    <Content Include="Views\Book\Article\lamps.cshtml" />
+    <Content Include="Views\Book\Article\lcd-plasma.cshtml" />
+    <Content Include="Views\Book\Article\lcd.cshtml" />
+    <Content Include="Views\Book\Article\manuals.cshtml" />
+    <Content Include="Views\Book\Article\myth-reality.cshtml" />
+    <Content Include="Views\Book\Article\network.cshtml" />
+    <Content Include="Views\Book\Article\orderparts.cshtml" />
+    <Content Include="Views\Book\Article\panelsfromdifferentmanufactures.cshtml" />
+    <Content Include="Views\Book\Article\parts.cshtml" />
+    <Content Include="Views\Book\Article\plasma.cshtml" />
+    <Content Include="Views\Book\Article\rattles.cshtml" />
+    <Content Include="Views\Book\Article\shattered.cshtml" />
+    <Content Include="Views\Book\Article\solder.cshtml" />
+    <Content Include="Views\Book\Article\stripesandbars.cshtml" />
+    <Content Include="Views\Book\Article\thingstoconsider.cshtml" />
+    <Content Include="Views\Book\Article\update.cshtml" />
+    <Content Include="Views\Book\Article\volume.cshtml" />
+    <Content Include="Views\Book\Article\wheels.cshtml" />
+    <Content Include="Views\Book\Article\worth-fixing.cshtml" />
+    <Content Include="Views\Book\Article\zoom.cshtml" />
+    <Content Include="Views\Book\Default.cshtml" />
+    <Content Include="Views\Book\Article\test.cshtml" />
+    <Content Include="DAL.xsc">
+      <DependentUpon>DAL.xsd</DependentUpon>
+    </Content>
+    <Content Include="WebCamLive.html" />
+    <None Include="DAL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DAL.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="DAL.xss">
+      <DependentUpon>DAL.xsd</DependentUpon>
+    </Content>
+    <Content Include="Views\Book\Article\backlight.cshtml" />
+    <Content Include="Views\Book\Article\water.cshtml" />
+    <Content Include="Views\Book\Article\lightning.cshtml" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\FixMyOwnTv.pubxml" />
+    <Content Include="HTML\BackupAd.html" />
+    <Content Include="HTML\favicon.ico" />
+    <Content Include="Images\Buttons\Accept.gif" />
+    <Content Include="Images\Buttons\AndrewButton.gif" />
+    <Content Include="Images\Buttons\Andrews.gif" />
+    <Content Include="Images\Buttons\ArticleButtonMatrix5.gif" />
+    <Content Include="Images\Buttons\AudioDropOut.gif" />
+    <Content Include="Images\Buttons\Author.gif" />
+    <Content Include="Images\Buttons\BurnIn.gif" />
+    <Content Include="Images\Buttons\Channels.gif" />
+    <Content Include="Images\Buttons\ContactUs.gif" />
+    <Content Include="Images\Buttons\DS.gif" />
+    <Content Include="Images\Buttons\DVD.gif" />
+    <Content Include="Images\Buttons\Inputs.gif" />
+    <Content Include="Images\Buttons\IntSignal.gif" />
+    <Content Include="Images\Buttons\MCM.gif" />
+    <Content Include="Images\Buttons\MCM_Button.gif" />
+    <Content Include="Images\Buttons\MenuButton_Blank.gif" />
+    <Content Include="Images\Buttons\MenuButton_LeftSide.gif" />
+    <Content Include="Images\Buttons\MenuButton_RightSide.gif" />
+    <Content Include="Images\Buttons\MenuButton_Segment.gif" />
+    <Content Include="Images\Buttons\MobileViewButton.gif" />
+    <Content Include="Images\Buttons\NavArticles.gif" />
+    <Content Include="Images\Buttons\NavAsk.gif" />
+    <Content Include="Images\Buttons\NavDiagnose.gif" />
+    <Content Include="Images\Buttons\NavResources.gif" />
+    <Content Include="Images\Buttons\NPUQ.gif" />
+    <Content Include="Images\Buttons\PDFS.gif" />
+    <Content Include="Images\Buttons\PSL.gif" />
+    <Content Include="Images\Buttons\Replace.gif" />
+    <Content Include="Images\Buttons\ROLN.gif" />
+    <Content Include="Images\Buttons\Sams.gif" />
+    <Content Include="Images\Buttons\SamsPhotofacts.gif" />
+    <Content Include="Images\Buttons\Schedule.gif" />
+    <Content Include="Images\Buttons\Something.gif" />
+    <Content Include="Images\Buttons\Speckles.gif" />
+    <Content Include="Images\Buttons\Stripes.gif" />
+    <Content Include="Images\Buttons\Submit.gif" />
+    <Content Include="Images\Buttons\SymptomButtonMatrix.gif" />
+    <Content Include="Images\Buttons\TradebitButton.gif" />
+    <Content Include="Images\Buttons\TradebitInc.gif" />
+    <Content Include="Images\Buttons\Volume.gif" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\Graphics\Alert_CouponCode.gif" />
+    <Content Include="Images\Graphics\Alert_FreeShipping.gif" />
+    <Content Include="Images\Graphics\BackgroundGradient2.jpg" />
+    <Content Include="Images\Graphics\DoItYourselfersBackground.jpg" />
+    <Content Include="Images\Graphics\GradientBackground.jpg" />
+    <Content Include="Images\Graphics\MenuRowBackground.gif" />
+    <Content Include="Images\Graphics\TestPatternBar.gif" />
+    <Content Include="Images\Graphics\UnitedStates.bmp" />
+    <Content Include="Images\HTML\favicon.ico" />
+    <Content Include="Images\MikesAdImages\2.png" />
+    <Content Include="Images\MikesAdImages\3.png" />
+    <Content Include="Images\MikesAdImages\4.png" />
+    <Content Include="Images\MikesAdImages\5.png" />
+    <Content Include="Images\MikesAdImages\6.png" />
+    <Content Include="Images\MikesAdImages\FullAd.png" />
+    <Content Include="Images\Photos\26-67-large.jpg" />
+    <Content Include="Images\Photos\32-26415.jpg" />
+    <Content Include="Images\Photos\32-26625.jpg" />
+    <Content Include="Images\Photos\72-7735.jpg" />
+    <Content Include="Images\Photos\72-7770.jpg" />
+    <Content Include="Images\Photos\Audio_Cable.jpg" />
+    <Content Include="Images\Photos\broken_tv.jpg" />
+    <Content Include="Images\Photos\c7950224_CAB09F.jpeg" />
+    <Content Include="Images\Photos\capacitors_300w.jpg" />
+    <Content Include="Images\Photos\Coax_connectors.jpg" />
+    <Content Include="Images\Photos\Component_Video_Cable.jpg" />
+    <Content Include="Images\Photos\Composite_Video_Cable.jpg" />
+    <Content Include="Images\Photos\DSCI0057.JPG" />
+    <Content Include="Images\Photos\DSCI0107.jpg" />
+    <Content Include="Images\Photos\DSCI0107.png" />
+    <Content Include="Images\Photos\fuse.JPG" />
+    <Content Include="Images\Photos\groupshot2003.jpg" />
+    <Content Include="Images\Photos\HDMI_Connectors.jpg" />
+    <Content Include="Images\Photos\MyThumbnail.jpg" />
+    <Content Include="Images\Photos\Optical_Cable.jpg" />
+    <Content Include="Images\Photos\P1050188.JPG" />
+    <Content Include="Images\Photos\P1050188.png" />
+    <Content Include="Images\Photos\P1050191.JPG" />
+    <Content Include="Images\Photos\P1050191.png" />
+    <Content Include="Images\Photos\P1050193a.jpg" />
+    <Content Include="Images\Photos\P1050193a.png" />
+    <Content Include="Images\Photos\P1050195.JPG" />
+    <Content Include="Images\Photos\USB.jpg" />
+    <Content Include="Images\Photos\v-shaped-rabbit-ears.jpg" />
+    <Content Include="Images\Text\12345.txt" />
+    <Content Include="Images\Text\Danger-High-Voltage.gif" />
+    <Content Include="Images\Text\DavesRepair.png" />
+    <Content Include="Images\Text\DoItYourselfersBanner.PNG" />
+    <Content Include="Images\Text\facebool_button.png" />
+    <Content Include="Images\Text\GeekSquadAlert.gif" />
+    <Content Include="Images\Text\loanbenderMobileAd.png" />
+    <Content Include="Images\Text\Logo.gif" />
+    <Content Include="Images\Text\Logo2.gif" />
+    <Content Include="Images\Text\Logo2.jpg" />
+    <Content Include="Images\Text\Logo2_mobile.gif" />
+    <Content Include="Images\Text\Logo2_PayPal.bmp" />
+    <Content Include="Images\Text\Logo2_PayPal.gif" />
+    <Content Include="Images\Text\Logo3.gif" />
+    <Content Include="Images\Text\Logo3_mobile.gif" />
+    <Content Include="Images\Text\LogoForFacebook.gif" />
+    <Content Include="Images\Text\NewLogoSmall.gif" />
+    <Content Include="Ad\InLineAd.html" />
+    <Content Include="Ad\InLineAd2.htm" />
+    <Content Include="Ad\InLineAd3.html" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="sitemap_google.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Error\NotFound.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Error\Down.cshtml" />
+    <Content Include="Views\Error\Global.cshtml" />
+    <Content Include="Views\Shared\Forum.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
