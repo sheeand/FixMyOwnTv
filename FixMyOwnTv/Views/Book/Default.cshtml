@@ -336,153 +336,14 @@
             </div>
         </div>
 
-            <br />
-            <br />
+        <br />
+        <br />
 
-            @*Bing Knowledge Widget - START*@
-            <script type='text/javascript' src='//www.bing.com/widget/bootstrap.js' data-id='de71836bd1ef4f8da1c3c2a6cd9cccc1' data-version='1.0b' data-autosnapshot='true' async></script>
-            @*Bing Knowledge Widget - END*@
+        @*Bing Knowledge Widget - START*@
+        <script type='text/javascript' src='//www.bing.com/widget/bootstrap.js' data-id='de71836bd1ef4f8da1c3c2a6cd9cccc1' data-version='1.0b' data-autosnapshot='true' async></script>
+        @*Bing Knowledge Widget - END*@
 
-            <script type="text/javascript">
-
-
-  @*
-        $(document).ready(function () {
-            $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); })
-                .on('touchstart.dropdown', '.dropdown-submenu', function (e) { e.stopPropagation(); });
-            GetAdWhenNeeded()
-        });
-
-        function GetAdWhenNeeded() {
-            var host = '@ViewBag.Host/';
-            if ($('#EBayAd')) {
-                $('#EBayAd').html("");
-                $('#EBayAd').html(function () {
-                    $('#EBayAd').html('<iframe src="http://' + host + 'Ad/EBay.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#EBayAd2')) {
-                $('#EBayAd2').html("");
-                $('#EBayAd2').html(function () {
-                    $('#EBayAd2').html('<iframe src="http://' + host + 'Ad/EBay2.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#AdAntennas')) {
-                $('#AdAntennas').html("");
-                $('#AdAntennas').html(function () {
-                    $('#AdAntennas').html('<iframe src="http://' + host + 'Ad/EBay-Antennas.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad1')) {
-                $('#Ad1').html("");
-                $('#Ad1').html(function () {
-                    $('#Ad1').html('<iframe src="http://' + host + 'Ad/Ad1.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad2')) {
-                $('#Ad2').html("");
-                $('#Ad2').html(function () {
-                    $('#Ad2').html('<iframe src="http://' + host + 'Ad/Ad2.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad3')) {
-                $('#Ad3').html("");
-                $('#Ad3').html(function () {
-                    $('#Ad3').html('<iframe src="http://' + host + 'Ad/Ad3.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad4')) {
-                $('#Ad4').html("");
-                $('#Ad4').html(function () {
-                    $('#Ad4').html('<iframe src="http://' + host + 'Ad/Ad4.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad5')) {
-                $('#Ad5').html("");
-                $('#Ad5').html(function () {
-                    $('#Ad5').html('<iframe src="http://' + host + 'Ad/Ad5.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad6')) {
-                $('#Ad6').html("");
-                $('#Ad6').html(function () {
-                    $('#Ad6').html('<iframe src="http://' + host + 'Ad/Ad6.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad7')) {
-                $('#Ad7').html("");
-                $('#Ad7').html(function () {
-                    $('#Ad7').html('<iframe src="http://' + host + 'Ad/Ad7.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad8')) {
-                $('#Ad8').html("");
-                $('#Ad8').html(function () {
-                    $('#Ad8').html('<iframe src="http://' + host + 'Ad/Ad8.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad9')) {
-                $('#Ad9').html("");
-                $('#Ad9').html(function () {
-                    $('#Ad9').html('<iframe src="http://' + host + 'Ad/Ad9.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad10')) {
-                $('#Ad10').html("");
-                $('#Ad10').html(function () {
-                    $('#Ad10').html('<iframe src="http://' + host + 'Ad/Ad10.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad11')) {
-                $('#Ad11').html("");
-                $('#Ad11').html(function () {
-                    $('#Ad11').html('<iframe src="http://' + host + 'Ad/Ad11.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad12')) {
-                $('#Ad12').html("");
-                $('#Ad12').html(function () {
-                    $('#Ad12').html('<iframe src="http://' + host + 'Ad/Ad12.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad13')) {
-                $('#Ad13').html("");
-                $('#Ad13').html(function () {
-                    $('#Ad13').html('<iframe src="http://' + host + 'Ad/Ad13.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#Ad14')) {
-                $('#Ad14').html("");
-                $('#Ad14').html(function () {
-                    $('#Ad14').html('<iframe src="http://' + host + 'Ad/Ad14.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#InLineAd')) {
-                $('#InLineAd').html("");
-                $('#InLineAd').html(function () {
-                    $('#InLineAd').html('<iframe src="http://' + host + 'Ad/InLineAd.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#InLineAd3')) {
-                $('#InLineAd3').html("");
-                $('#InLineAd3').html(function () {
-                    $('#InLineAd3').html('<iframe src="http://' + host + 'Ad/InLineAd3.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-            if ($('#MyFeaturedAd')) {
-                $('#MyFeaturedAd').html("");
-                $('#MyFeaturedAd').html(function () {
-                    $('#MyFeaturedAd').html('<iframe src="http://' + host + 'Ad/MyFeaturedAd.html" seamless="seamless" frameborder="0" width="318" height="260" scrolling="no" style="height:260px; padding-top: 10px; padding-bottom: 15px; margin-top: 10px;" rel="nofollow"></iframe>')
-                });
-            };
-       }
-
-
-        function Toggle(id) {
-            $("'#" + id + " #ReplacingPartsLink.dropdown-toggle'").dropdown()
-        }
-
-*@
+    <script type="text/javascript">
 
         function ToggleStars(rating) {
             if ($('#StarRatingThankYou').css('visibility') === 'hidden') {
@@ -529,7 +390,7 @@
             }
         }
 
-            </script>
+     </script>
 </body>
 </html>
 
