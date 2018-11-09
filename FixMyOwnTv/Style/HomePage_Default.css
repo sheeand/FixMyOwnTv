@@ -40,6 +40,11 @@ h4 {
     color:#008080;
 }
 
+.btn {
+     margin-bottom:12px;
+     border:1px solid #335555;
+}
+
 .col-centered{
     float: none;
     margin: 0 auto;
