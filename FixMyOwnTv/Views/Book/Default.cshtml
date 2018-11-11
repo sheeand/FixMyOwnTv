@@ -45,8 +45,8 @@
     @*<script type="text/javascript" src="~/Scripts/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>*@
 
-    <link type="text/css" rel="stylesheet" href="~/Style/bootstrap/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="~/Style/bootstrap/css/bootstrap-responsive.min.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    @*<link type="text/css" rel="stylesheet" href="~/Style/bootstrap/css/bootstrap-responsive.min.css" />*@
     <link type="text/css" rel="stylesheet" href="~/Style/HomePage_Default.css" />
     <script type="text/javascript" src="~/Style/bootstrap/js/bootstrap.min.js"></script>
 
@@ -110,15 +110,15 @@
 </head>
 <body>
     <!-- Container -->
-    <div class="container" style="max-width:600px!important;">
+    <div class="container" style="max-width:700px!important; padding:20px;">
         <!-- Header -->
-        <div class="row">
-                <img class="span8" itemprop="image" alt="FixMyOwnTV.com" src="../../Images/Text/Logo3.gif" style="margin-top:30px; margin-left:20px;" />
+        <div class="row-eq-height">
+            <img class="col-12" itemprop="image" alt="FixMyOwnTV.com" src="../../Images/Text/Logo3.gif" />
         </div>
-        <div class="row">
-                <h5 class="span8" style="color: #008080; margin-left: 20px;">Learn - get what you need - do it yourself!</h5>
+        <div class="row-eq-height">
+            <h5 class="col-12" style="color: #008080; margin-left: 20px;">Learn - get what you need - do it yourself!</h5>
         </div>
-            @*
+        @*
         <div id="customSearch" style="display: @ViewBag.ExposeCustomSearch">
             <div id="Search" class="span5">
                     <script>
@@ -137,108 +137,124 @@
             <div class="span3"></div>
 
             </div>
-            *@
-            <!-- End Header -->
-            <!-- Nav bar -->
-            <br />
-            <div id="buttonArray" class="nav" style="margin-bottom:0px;">
-                <div class="row-fluid"><h4><em>Learning Center</em></h4></div>
-                <div class="row-fluid" id="navBar">
-                    <div class="span12">
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Basics<br /></button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkHome" href=@ViewBag.HttpHost target="_self">@ViewBag.defaultMenuPick</a></li>
-                            <li><a id="lnkMyth-Reality" href=@String.Concat(@ViewBag.HttpHost, "myth-reality") target="_self">@ViewBag.mythrealityMenuPick</a></li>
-                            <li><a id="lnkCould" href=@String.Concat(@ViewBag.HttpHost, "could") target="_self">@ViewBag.couldMenuPick</a></li>
-                            <li><a id="lnkworth-fixing" href=@String.Concat(@ViewBag.HttpHost, "worth-fixing") target="_self">@ViewBag.worthfixingMenuPick</a></li>
-                            <li><a id="lnkworth-fixing2" href=@String.Concat(@ViewBag.HttpHost, "worth-fixing") target="_self">@ViewBag.reasonswhyMenuPick</a></li>
-                            <li><a id="lnkLCD-Plasma" href=@String.Concat(@ViewBag.HttpHost, "lcd-plasma") target="_self">@ViewBag.lcdplasmaMenuPick</a></li>
-                            <li><a id="lnkOrderParts" href=@String.Concat(@ViewBag.HttpHost, "orderparts") target="_self">@ViewBag.orderpartsMenuPick</a></li>
-                            <li><a id="lnkDanger" href=@String.Concat(@ViewBag.HttpHost, "danger") target="_self">@ViewBag.dangerMenuPick</a></li>
-                            <li><a id="lnkEquipment" href=@String.Concat(@ViewBag.HttpHost, "equipment") target="_self">@ViewBag.equipmentMenuPick</a></li>
-                            <li><a id="lnkHookedUp" href=@String.Concat(@ViewBag.HttpHost, "hookedup") target="_self">@ViewBag.hookedupMenuPick</a></li>
-                        </ul>
-
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Cleaning<br /></button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkFlats" href=@String.Concat(@ViewBag.HttpHost, "flats") target="_self">@ViewBag.flatsMenuPick</a></li>
-                            <li><a id="lnkDLP" href=@String.Concat(@ViewBag.HttpHost, "dlp") target="_self">@ViewBag.dlpMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Resources<br /></button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkDVD" href="http://www.mytvtestpatterns.com" rel="noreferrer" ) target="_blank">Free TV Test Patterns & Signals</a></li>
-                            <li><a id="lnkBooks" href=@String.Concat(@ViewBag.HttpHost, "books") target="_self">@ViewBag.booksMenuPick</a></li>
-                            <li><a id="lnkManuals" href=@String.Concat(@ViewBag.HttpHost, "manuals") target="_self">@ViewBag.manualsMenuPick</a></li>
-                            <li><a id="lnkParts" href=@String.Concat(@ViewBag.HttpHost, "parts") target="_self">@ViewBag.partsMenuPick</a></li>
-                            <li><a id="lnkAnswer" href=@String.Concat(@ViewBag.HttpHost, "daves") target="_self">@ViewBag.davesMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Replacing<br />Parts</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkParts" href=@String.Concat(@ViewBag.HttpHost, "parts") target="_self">@ViewBag.partsMenuPick</a></li>
-                            <li><a id="lnkLCD" href=@String.Concat(@ViewBag.HttpHost, "lcd") target="_self">@ViewBag.lcdMenuPick</a></li>
-                            <li><a id="lnkPlasma" href=@String.Concat(@ViewBag.HttpHost, "plasma") target="_self">@ViewBag.plasmaMenuPick</a></li>
-                            <li><a id="lnkBoards" href=@String.Concat(@ViewBag.HttpHost, "boards") target="_self">@ViewBag.boardsMenuPick</a></li>
-                            <li><a id="lnkGetTo" href=@String.Concat(@ViewBag.HttpHost, "getto") target="_self">@ViewBag.gettoMenuPick</a></li>
-                            <li><a id="lnkSolder" href=@String.Concat(@ViewBag.HttpHost, "solder") target="_self">@ViewBag.solderMenuPick</a></li>
-                            <li><a id="lnkWheels" href=@String.Concat(@ViewBag.HttpHost, "wheels") target="_self">@ViewBag.wheelsMenuPick</a></li>
-                            <li><a id="lnkEngines" href=@String.Concat(@ViewBag.HttpHost, "engines") target="_self">@ViewBag.enginesMenuPick</a></li>
-                            <li><a id="lnkLamps" href=@String.Concat(@ViewBag.HttpHost, "lamps") target="_self">@ViewBag.lampsMenuPick</a></li>
-                        </ul>
-                        <a class="btn btn-lg btn-success active" id="lnkFAQs" style="color: white;" href=@String.Concat(@ViewBag.HttpHost, "faqs") target="_self">FAQs</a>
-                        <a class="btn btn-lg btn-success active" id="lnkAboutUs" style="color: white;" href=@String.Concat(@ViewBag.HttpHost, "aboutus") target="_self">About</a>
+        *@
+        <!-- End Header -->
+        <!-- Nav bar -->
+        <br />
+        <nav>
+            <div class="row"><h4><em>Learning Center</em></h4></div>
+            <div class="row" id="navBar">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Basics<br /></button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkHome" href=@ViewBag.HttpHost target="_self">@ViewBag.defaultMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkMyth-Reality" href=@String.Concat(@ViewBag.HttpHost, "myth-reality") target="_self">@ViewBag.mythrealityMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkCould" href=@String.Concat(@ViewBag.HttpHost, "could") target="_self">@ViewBag.couldMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkworth-fixing" href=@String.Concat(@ViewBag.HttpHost, "worth-fixing") target="_self">@ViewBag.worthfixingMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkworth-fixing2" href=@String.Concat(@ViewBag.HttpHost, "worth-fixing") target="_self">@ViewBag.reasonswhyMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkLCD-Plasma" href=@String.Concat(@ViewBag.HttpHost, "lcd-plasma") target="_self">@ViewBag.lcdplasmaMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkOrderParts" href=@String.Concat(@ViewBag.HttpHost, "orderparts") target="_self">@ViewBag.orderpartsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkDanger" href=@String.Concat(@ViewBag.HttpHost, "danger") target="_self">@ViewBag.dangerMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkEquipment" href=@String.Concat(@ViewBag.HttpHost, "equipment") target="_self">@ViewBag.equipmentMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkHookedUp" href=@String.Concat(@ViewBag.HttpHost, "hookedup") target="_self">@ViewBag.hookedupMenuPick</a><br />
                     </div>
                 </div>
-                <div class="row-fluid"><h4><em>Solution Center</em></h4></div>
-                <div class="row-fluid" id="navBar2">
-                    <div class="span12">
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Power<br />Problems</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkDead" href=@String.Concat(@ViewBag.HttpHost, "dead") target="_self">@ViewBag.deadMenuPick</a></li>
-                            <li><a id="lnkCycling" href=@String.Concat(@ViewBag.HttpHost, "cycling") target="_self">@ViewBag.cyclingMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Signal<br />Problems</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkAntenna" href=@String.Concat(@ViewBag.HttpHost, "antennas") target="_self">@ViewBag.antennasMenuPick</a></li>
-                            <li><a id="lnkIntSignal" href=@String.Concat(@ViewBag.HttpHost, "intsignal") target="_self">@ViewBag.intsignalMenuPick</a></li>
-                            <li><a id="lnkNetwork" href=@String.Concat(@ViewBag.HttpHost, "network") target="_self">@ViewBag.networkMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">System<br />Problems</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkKeyPadChannels" href=@String.Concat(@ViewBag.HttpHost, "keypad/channels") target="_self">@ViewBag.channelsMenuPick</a></li>
-                            <li><a id="lnkKeyPadInputs" href=@String.Concat(@ViewBag.HttpHost, "keypad/inputs") target="_self">@ViewBag.inputsMenuPick</a></li>
-                            <li><a id="lnkUpdate" href=@String.Concat(@ViewBag.HttpHost, "update") target="_self">@ViewBag.updateMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Picture<br />Problems</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkShattered" href=@String.Concat(@ViewBag.HttpHost, "shattered") target="_self">@ViewBag.shatteredMenuPick</a></li>
-                            <li><a id="lnkSize" href=@String.Concat(@ViewBag.HttpHost, "zoom") target="_self">@ViewBag.zoomMenuPick</a></li>
-                            <li><a id="lnkColors" href=@String.Concat(@ViewBag.HttpHost, "colors") target="_self">@ViewBag.colorsMenuPick</a></li>
-                            <li><a id="lnkIntSignal" href=@String.Concat(@ViewBag.HttpHost, "intsignal") target="_self">@ViewBag.intsignalMenuPick</a></li>
-                            <li><a id="lnkAntenna" href=@String.Concat(@ViewBag.HttpHost, "antennas") target="_self">@ViewBag.antennasMenuPick</a></li>
-                            <li><a id="lnkStripesAndBars" href=@String.Concat(@ViewBag.HttpHost, "stripesandbars") target="_self">@ViewBag.stripesandbarsMenuPick</a></li>
-                            <li><a id="lnkStripesAndBars" href=@String.Concat(@ViewBag.HttpHost, "backlight") target="_self">@ViewBag.backlightMenuPick</a></li>
-                            <li><a id="lnkLampFailure" href=@String.Concat(@ViewBag.HttpHost, "lampfailure") target="_self">@ViewBag.lampfailureMenuPick</a></li>
-                            <li><a id="lnkBurnIn" href=@String.Concat(@ViewBag.HttpHost, "burnin") target="_self">@ViewBag.burninMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Sound<br />Problems</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkRattles" href=@String.Concat(@ViewBag.HttpHost, "rattles") target="_self">@ViewBag.rattlesMenuPick</a></li>
-                            <li><a id="lnkIAUD" href=@String.Concat(@ViewBag.HttpHost, "iaud") target="_self">@ViewBag.iaudMenuPick</a></li>
-                            <li><a id="lnkVolume" href=@String.Concat(@ViewBag.HttpHost, "volume") target="_self">@ViewBag.volumeMenuPick</a></li>
-                            <li><a id="lnkKeyPadVolume" href=@String.Concat(@ViewBag.HttpHost, "keypad/volume") target="_self">@ViewBag.volumecontrolMenuPick</a></li>
-                            <li><a id="lnkBuzzing" href=@String.Concat(@ViewBag.HttpHost, "buzzing") target="_self">@ViewBag.buzzingMenuPick</a></li>
-                        </ul>
-                        <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" style="color: white;">Damage<br />Control</button>
-                        <ul class="dropdown-menu">
-                            <li><a id="lnkPhysDamg" href=@String.Concat(@ViewBag.HttpHost, "worth-fixing#physical") target="_self">@ViewBag.physDamgMenuPick</a></li>
-                            <li><a id="lnkFlooding" href=@String.Concat(@ViewBag.HttpHost, "water") target="_self">@ViewBag.waterMenuPick</a></li>
-                            <li><a id="lnkLightning" href=@String.Concat(@ViewBag.HttpHost, "lightning") target="_self">@ViewBag.lightningMenuPick</a></li>
-                        </ul>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Cleaning<br /></button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkFlats" href=@String.Concat(@ViewBag.HttpHost, "flats") target="_self">@ViewBag.flatsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkDLP" href=@String.Concat(@ViewBag.HttpHost, "dlp") target="_self">@ViewBag.dlpMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Resources<br /></button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkDVD" href="http://www.mytvtestpatterns.com" rel="noreferrer" ) target="_blank">Free TV Test Patterns & Signals</a><br />
+                        <a class="dropdown-item" id="lnkBooks" href=@String.Concat(@ViewBag.HttpHost, "books") target="_self">@ViewBag.booksMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkManuals" href=@String.Concat(@ViewBag.HttpHost, "manuals") target="_self">@ViewBag.manualsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkParts" href=@String.Concat(@ViewBag.HttpHost, "parts") target="_self">@ViewBag.partsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkAnswer" href=@String.Concat(@ViewBag.HttpHost, "daves") target="_self">@ViewBag.davesMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Replacing<br />Parts</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkParts" href=@String.Concat(@ViewBag.HttpHost, "parts") target="_self">@ViewBag.partsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkLCD" href=@String.Concat(@ViewBag.HttpHost, "lcd") target="_self">@ViewBag.lcdMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkPlasma" href=@String.Concat(@ViewBag.HttpHost, "plasma") target="_self">@ViewBag.plasmaMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkBoards" href=@String.Concat(@ViewBag.HttpHost, "boards") target="_self">@ViewBag.boardsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkGetTo" href=@String.Concat(@ViewBag.HttpHost, "getto") target="_self">@ViewBag.gettoMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkSolder" href=@String.Concat(@ViewBag.HttpHost, "solder") target="_self">@ViewBag.solderMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkWheels" href=@String.Concat(@ViewBag.HttpHost, "wheels") target="_self">@ViewBag.wheelsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkEngines" href=@String.Concat(@ViewBag.HttpHost, "engines") target="_self">@ViewBag.enginesMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkLamps" href=@String.Concat(@ViewBag.HttpHost, "lamps") target="_self">@ViewBag.lampsMenuPick</a><br />
+                    </div>
+                </div>
+                <a class="btn btn-success" style="height:62px !important;" id="lnkFAQs" href=@String.Concat(@ViewBag.HttpHost, "faqs") target="_self">FAQs</a><br />
+                <a class="btn btn-success" style="height:62px !important;" id="lnkAboutUs" href=@String.Concat(@ViewBag.HttpHost, "aboutus") target="_self">About</a><br />
+            </div>
+            <div class="row"><h4><em>Solution Center</em></h4></div>
+            <div class="row" id="navBar2">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Power<br />Problems</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkDead" href=@String.Concat(@ViewBag.HttpHost, "dead") target="_self">@ViewBag.deadMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkCycling" href=@String.Concat(@ViewBag.HttpHost, "cycling") target="_self">@ViewBag.cyclingMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Signal<br />Problems</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkAntenna" href=@String.Concat(@ViewBag.HttpHost, "antennas") target="_self">@ViewBag.antennasMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkIntSignal" href=@String.Concat(@ViewBag.HttpHost, "intsignal") target="_self">@ViewBag.intsignalMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkNetwork" href=@String.Concat(@ViewBag.HttpHost, "network") target="_self">@ViewBag.networkMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">System<br />Problems</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkKeyPadChannels" href=@String.Concat(@ViewBag.HttpHost, "keypad/channels") target="_self">@ViewBag.channelsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkKeyPadInputs" href=@String.Concat(@ViewBag.HttpHost, "keypad/inputs") target="_self">@ViewBag.inputsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkUpdate" href=@String.Concat(@ViewBag.HttpHost, "update") target="_self">@ViewBag.updateMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Picture<br />Problems</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkShattered" href=@String.Concat(@ViewBag.HttpHost, "shattered") target="_self">@ViewBag.shatteredMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkSize" href=@String.Concat(@ViewBag.HttpHost, "zoom") target="_self">@ViewBag.zoomMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkColors" href=@String.Concat(@ViewBag.HttpHost, "colors") target="_self">@ViewBag.colorsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkIntSignal" href=@String.Concat(@ViewBag.HttpHost, "intsignal") target="_self">@ViewBag.intsignalMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkAntenna" href=@String.Concat(@ViewBag.HttpHost, "antennas") target="_self">@ViewBag.antennasMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkStripesAndBars" href=@String.Concat(@ViewBag.HttpHost, "stripesandbars") target="_self">@ViewBag.stripesandbarsMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkStripesAndBars" href=@String.Concat(@ViewBag.HttpHost, "backlight") target="_self">@ViewBag.backlightMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkLampFailure" href=@String.Concat(@ViewBag.HttpHost, "lampfailure") target="_self">@ViewBag.lampfailureMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkBurnIn" href=@String.Concat(@ViewBag.HttpHost, "burnin") target="_self">@ViewBag.burninMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Sound<br />Problems</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkRattles" href=@String.Concat(@ViewBag.HttpHost, "rattles") target="_self">@ViewBag.rattlesMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkIAUD" href=@String.Concat(@ViewBag.HttpHost, "iaud") target="_self">@ViewBag.iaudMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkVolume" href=@String.Concat(@ViewBag.HttpHost, "volume") target="_self">@ViewBag.volumeMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkKeyPadVolume" href=@String.Concat(@ViewBag.HttpHost, "keypad/volume") target="_self">@ViewBag.volumecontrolMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkBuzzing" href=@String.Concat(@ViewBag.HttpHost, "buzzing") target="_self">@ViewBag.buzzingMenuPick</a><br />
+                    </div>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" style="color: white;">Damage<br />Control</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="lnkPhysDamg" href=@String.Concat(@ViewBag.HttpHost, "worth-fixing#physical") target="_self">@ViewBag.physDamgMenuPick</a>
+                        <a class="dropdown-item" id="lnkFlooding" href=@String.Concat(@ViewBag.HttpHost, "water") target="_self">@ViewBag.waterMenuPick</a><br />
+                        <a class="dropdown-item" id="lnkLightning" href=@String.Concat(@ViewBag.HttpHost, "lightning") target="_self">@ViewBag.lightningMenuPick</a><br />
                     </div>
                 </div>
             </div>
-            <!-- End Nav bar -->
-            <!-- Main Page -->
+        </nav>
+        <!-- End Nav bar -->
+        <!-- Main Page -->
+        <div class="row">
             <div id="mainContent">
 
                 <!-- justAnswer Pop-up -->
@@ -255,11 +271,6 @@
                     </script>
                 </div><img src="https://trk.justanswer.com/aff_i?offer_id=2&aff_id=3640&file_id=2018&aff_sub=VA&aff_sub2=Subtle" width="1" height="1" />
                 <!-- End justAnswer Pop-up -->
-                <!-- Left tall ad (keep div)-->
-                <div id="mobileLeftAd" style="position:absolute;top:300px;left:50%;margin-left:-500px;">
-                    @*<script type="text/javascript" language="javascript" src="http://www.dpbolvw.net/placeholder-32588105?target=_top&mouseover=N"></script>*@
-                </div>
-                <!-- End Left tall ad -->
 
                 <div class="dynamic-width" style="float:left; text-align:justify;">
                     <div id="ArticleContainer" style="line-height:175%; margin-top: 10px;">
@@ -309,19 +320,18 @@
                             <!-- End Footer -->
                         </div>
                     </div>
-                    <!-- Right column -->
-                    <!-- End Right column -->
                 </div>
                 <!-- End Container -->
             </div>
         </div>
+    </div>
 
-        <br />
-        <br />
+    <br />
+    <br />
 
-        @*Bing Knowledge Widget - START*@
-        <script type='text/javascript' src='//www.bing.com/widget/bootstrap.js' data-id='de71836bd1ef4f8da1c3c2a6cd9cccc1' data-version='1.0b' data-autosnapshot='true' async></script>
-        @*Bing Knowledge Widget - END*@
+    @*Bing Knowledge Widget - START*@
+    <script type='text/javascript' src='//www.bing.com/widget/bootstrap.js' data-id='de71836bd1ef4f8da1c3c2a6cd9cccc1' data-version='1.0b' data-autosnapshot='true' async></script>
+    @*Bing Knowledge Widget - END*@
 
     <script type="text/javascript">
 

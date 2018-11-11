@@ -41,11 +41,10 @@ h4 {
 }
 
 .btn {
-     margin-bottom:12px;
-     border:1px solid #335555;
+     margin: 5px;
 }
 
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
 }
@@ -56,6 +55,7 @@ a {
 }
 
 p a {
+
     text-decoration: underline;
     color: #0000ff;
     font-family:inherit;
@@ -79,11 +79,6 @@ div[id='navBar'] > div > ul, div[id='navBar2'] > div > ul, ul.breadcrumb, ul.bre
     margin-left: 0px;
 }
 
-
-#buttonArray > div > div > ul > li.btn.btn-info.dropdown.open > ul, #buttonArray > div > div > ul > li.btn.btn-success.dropdown.open > ul {
-    position:absolute; 
-    left:-50px;
-}
 
 ul.breadcrumb, ul.breadcrumb2 {
     text-align: center;
