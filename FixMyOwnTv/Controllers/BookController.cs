@@ -300,7 +300,7 @@ namespace FixMyOwnTv.Controllers
             ViewBag.lampfailureMenuPick = "Lamp Failure";
             ViewBag.lampsMenuPick = "Replacing Lamps";
             ViewBag.lcdplasmaMenuPick = "Is my TV an LCD, LED or Plasma";
-            ViewBag.lcdMenuPick = "LCD/LED Screen Replacement";
+            ViewBag.lcdMenuPick = "LCD-LED Screen Replacement";
             ViewBag.manualsMenuPick = "TV Service Manuals";
             ViewBag.mythrealityMenuPick = "Plasma TV Myths vs. Realities";
             ViewBag.networkMenuPick = "WiFi Connectivity";
@@ -309,7 +309,7 @@ namespace FixMyOwnTv.Controllers
             ViewBag.plasmaMenuPick = "Plasma Screen Replacement";
             ViewBag.rattlesMenuPick = "Speaker Rattle, Buzz";
             ViewBag.reasonswhyMenuPick = "Reasons Why You Shouldn't";
-            ViewBag.shatteredMenuPick = "Cracked TV Screen";
+            ViewBag.shatteredMenuPick = "Cracked - Broken TV Screens";
             ViewBag.solderMenuPick = "Replacing Soldered Parts";
             ViewBag.stripesandbarsMenuPick = "Stripes, Lines or Bars";
             ViewBag.updateMenuPick = "Software Updates";
@@ -609,7 +609,7 @@ namespace FixMyOwnTv.Controllers
                     page.og_description = "A rattle or buzz coming from the TV that coincides with the audio can either be an acoustic problem or an electronics problem. This web site will show you how to diagnose and fix the problem...";
                     break;
                 case "shattered":
-                    page.Title = "Cracked Broken TV Screen Self Replacement";
+                    page.Title = "Cracked Broken TV Screens";
                     page.Description = "Find out what can be done to fix a cracked or broken TV screen. There are many ways TV screens can crack. Learn how they are repairable.";
                     page.Keywords = "broken lcd panel,broken lcd screen,broken led panel,broken led screen,broken plasma panel,broken plasma screen,broken tv panel,broken tv screen,can a broken lcd screen be fixed,can a broken led screen be fixed,can a broken plasma screen be fixed,can a broken tv screen be fixed,can a cracked lcd screen be fixed,can a cracked led screen be fixed,can a cracked plasma screen be fixed,can a cracked tv screen be fixed,can a plasma panel be fixed,can a plasma screen be fixed,can a shattered lcd screen be fixed,can a shattered led screen be fixed,can a shattered plasma screen be fixed,can a shattered tv screen be fixed,can a tv panel be fixed,can a tv screen be fixed,can an lcd panel be fixed,can an lcd screen be fixed,can an led panel be fixed,can an led screen be fixed,cracked lcd screen,cracked led screen,cracked plasma screen,cracked tv screen,how to fix a broken lcd screen,how to fix a broken led screen,how to fix a broken plasma screen,how to fix a broken tv screen,how to fix a cracked lcd screen,how to fix a cracked led screen,how to fix a cracked plasma screen,how to fix a cracked tv screen,how to fix a lcd panel,how to fix a lcd screen,how to fix a plasma panel,how to fix a plasma screen,how to fix a shattered lcd screen,how to fix a shattered led screen,how to fix a shattered plasma screen,how to fix a shattered tv screen,how to fix a tv panel,how to fix a tv screen,how to fix an led panel,how to fix an led screen,lcd screen repair,lcd tv panel repair,led screen repair,led tv panel repair,plasma panel repair,plasma screen repair,plasma screen warentee,shattered lcd screen,shattered led screen,shattered plasma screen,shattered tv screen,spider cracks,stress fractures,tv  makes a buzzing noise,tv  makes a loud buzzing noise,tv makes a loud buzzing noise,tv screen is bad,tv screen is cracked,tv screen is damaged,tv screen repair,TV screen warranty,tv screen won't light up,tv won't turn on";
                     page.og_description = "In most cases, depending on the availability of replacement parts, your TV can be fixed. The hard truth is, whether you have an LCD, LED or plasma TV, a cracked or shattered screen cannot actually be repaired - it can only be replaced...";
