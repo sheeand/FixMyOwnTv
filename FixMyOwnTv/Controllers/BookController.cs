@@ -555,7 +555,7 @@ namespace FixMyOwnTv.Controllers
                     page.og_description = "One sure way to know whether you have an LCD/LED TV or a plasma TV is to poke the screen with your finger while watching TV. If it is of the LCD/LED variety the picture will go slightly dark where you poked the screen reacting with a ripple-like effect, and then quickly return to normal...";
                     break;
                 case "lcd":
-                    page.Title = "LCD LED TV Screen Replacement";
+                    page.Title = "How to Replace an LCD or LED Panel";
                     page.Description = "Learn how to replace a broken LCD and LED screen yourself. Learn how to remove and install an LCD or an LED flat-screen panel";
                     page.Keywords = "led tv screen repair,samsung tv screen repair,lcd tv screen repair,lcd tv screen repair,visio tv screen replacement,samsung tv screen replacement, sony tv screen replacement,lg tv screen replacement,flat screen repair,lcd screen replacement,lcd tv screen replacement,led screen replacement,led tv screen replacement,replace lcd panel,replace lcd screen,replace led panel,replace led screen,replace tv panel,replace tv screen,replacing LCD panel,replacing LCD screen,replacing LED panel,replacing LED screen,tv screen replacement,flat screen replacement";
                     page.og_description = "This article describes what to expect when replacing an LCD panel. It is like replacing a part under the hood of your car. You may have to remove some parts to get to what needs to be replaced, and then put it all back together again in the reverse order...";
@@ -597,7 +597,7 @@ namespace FixMyOwnTv.Controllers
                     page.og_description = "Most TV parts are replaceable. Find the TV part you need from these television parts dealers";
                     break;
                 case "plasma":
-                    page.Title = "Plasma TV Screen Replacement";
+                    page.Title = "How to Replace a Plasma Display Panel";
                     page.Description = "Broken TV screens cannot be repaired - they can only be replaced. Learn how to install a new plasma display panel in your TV.";
                     page.Keywords = "plasma screen replacement,plasma tv screen replacement,replace plasma panel,replace plasma screen,replace tv panel,replace tv screen,replacing plasma panel,replacing plasma screen,tv screen replacement";
                     page.og_description = "This article describes what to expect when replacing a plasma display panel. It is like replacing a part under the hood of your car. You may have to remove some parts to get to what needs to be replaced, and then put it all back together again in the reverse order...";
