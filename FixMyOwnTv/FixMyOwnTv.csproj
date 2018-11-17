@@ -174,6 +174,7 @@
     <Content Include="GeoTest.html" />
     <Content Include="Global.asax" />
     <Content Include="Images\Graphics\CrosshatchPattern.png" />
+    <Content Include="Images\Graphics\Logo_new.png" />
     <Content Include="Images\Graphics\MyFeaturedAd.png" />
     <Content Include="Images\Graphics\myTvTestPatternsLogo2.png" />
     <Content Include="Images\Graphics\myTvTestPatternsLogoSmall.png" />
