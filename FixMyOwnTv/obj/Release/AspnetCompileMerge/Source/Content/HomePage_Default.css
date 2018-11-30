@@ -1,0 +1,262 @@
+﻿
+/* margin: top right bottom left */
+
+                    /* Default.aspx */
+body {
+	background-color: #f0f0f0;
+    /*background-image: url(../Images/Graphics/BackgroundGradient2.jpg); */
+    background-repeat: repeat-x;   
+    font-size: 16px;
+	font-family: "Helvetica Neue", "Segoe UI", Verdana, "Lucida Grande", "Lucida Sans Unicode", Arial, Calibri, Sans-Serif;
+}
+#page {
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+                    /* headerDefault.ascx */
+p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+h1 {
+    text-align:center;
+}
+
+h4 {
+    clear: both;
+}
+
+.mediumAdVerticalMargin {
+    margin-bottom:40px;
+}
+
+.mobileMenuHeading {
+    font-family:"Arial Black";
+    color:#008080;
+}
+
+.btn {
+     margin-right:10px;
+     margin-bottom:10px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+a {
+    height:30px;
+}
+
+p a {
+    text-decoration: underline;
+    color: #0000ff;
+}
+
+ul {
+	background-color: #f0f0f0 !important;
+}
+
+ul.breadcrumb li {
+    list-style: none;
+    font-size:12px;
+    padding:0px;
+    display: inline;
+    color: green;
+}
+
+ul.breadcrumb2 li {
+    list-style: none;
+    font-size:12px;
+    padding:0px;
+    display: inline;
+    color: darkcyan;
+}
+
+/*  Small Phones - Fluid columns, no fixed widths */
+@media all and (max-width:310px) {
+    #InLineAdDiv {
+        display: none;
+    }
+    #InLineAdDiv_small {
+        display: inline-block;
+    }
+    #mobileLogo {
+        display: inline;
+    }
+    #bigLogo {
+        display: none;
+    }
+    #mobileLeftAd {
+        display: none;
+    }
+    #rightColumnLarge     {
+        display:none;
+    }
+    #defaultPictures {
+        display: none;
+    }
+    #dropdown-menu {
+     margin-bottom:10px;
+    }
+    .dynamic-width {
+        width:100%;
+    }
+}
+/*  Phones - Fluid columns, no fixed widths */
+@media all and (min-width:311px) and (max-width:480px) {
+    #mobileLogo {
+        display: inline;
+    }
+    #bigLogo {
+        display: none;
+    }
+    #mobileLeftAd {
+        display: none;
+    }
+    #rightColumnLarge     {
+        display:none;
+    }
+    #defaultPictures {
+        display: none;
+    }
+    #dropdown-menu {
+     margin-bottom:10px;
+    }
+    .dynamic-width {
+        width:100%;
+    }
+}
+/*  Phones to tablets - Fluid columns, no fixed widths */
+@media all and (min-width:481px) and (max-width:767px) {
+    #mobileLogo {
+        display: inline;
+    }
+    #bigLogo {
+        display: none;
+    }
+    #mobileLeftAd {
+        display:inline;
+    }
+    #rightColumnLarge     {
+        display:none;
+    }
+    #defaultPictures {
+        display:none;
+    }
+    #dropdown-submenu {
+     margin-bottom:10px;
+    }
+    .dynamic-width {
+        width:70%; 
+    }
+}
+
+/*  Portrait tablets - Column width 42px - Gutter width 20px */
+@media all and (min-width:768px) and (max-width:979px) {
+    #mobileLogo {
+        display: none;
+    }
+    #bigLogo {
+        display: inline;
+    }
+    #mobileLeftAd {
+        display:inline;
+    }
+    #rightColumnLarge     {
+        display:inline;
+    }
+    #defaultPictures {
+        display:inline;
+    }
+    #dropdown-submenu {
+     margin-bottom:0px;
+    }
+    .dynamic-width {
+        width:50%; 
+    }
+}
+
+/*  Default - Column width 60px - Gutter width 20px */
+@media all and (min-width:980px) and (max-width:1199px) {
+    #mobileLogo {
+        display: none;
+    }
+    #bigLogo {
+        display: inline;
+    }
+    #mobileLeftAd {
+        display:inline;
+    }
+    #rightColumnLarge     {
+        display:inline;
+    }
+    #defaultPictures {
+        display:inline;
+    }
+    #dropdown-submenu {
+     margin-bottom:0px;
+    }
+    .dynamic-width {
+        width:50%; 
+    }
+}
+
+/* Large display - Column width 70px - Gutter width 30px*/
+@media all and (min-width:1200px) {
+    #mobileLogo {
+        display: none;
+    }
+    #bigLogo {
+        display: inline;
+    }
+    #mobileLeftAd {
+        display:inline;
+    }
+    #rightColumnLarge     {
+        display:inline;
+    }
+    #defaultPictures {
+        display:inline;
+    }
+    #dropdown-submenu {
+     margin-bottom:0px;
+    }
+    .dynamic-width {
+        width:50%; 
+    }
+}   
+
+
+@media print {
+    #body    {
+        width:660px;
+    }
+    #page    {
+        width:660px;
+        margin-left:0px;
+        margin-right:0px;
+    }
+    #header    {
+        width:660px;
+    }
+    .nav    {
+        display:none;
+        width:0px;
+    }
+    #rightColumnLarge {
+        display: none;
+    }
+    #mainContent    {
+        width:660px;        
+    }
+    #footer    {
+        width:660px;
+    }
+}
+

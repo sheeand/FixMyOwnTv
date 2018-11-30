@@ -1,0 +1,58 @@
+﻿@model FixMyOwnTv.Models.PageInfo
+
+<nav>
+@switch (Model.Title)
+{
+    case "Volume Keeps Changing":
+        <ul class="breadcrumb2">
+            <li>Solution Center<span style="font-size: 150%;"> &#187;</span> </li>
+            <li>Sound Problems<span style="font-size: 150%;"> &#187;</span> </li>
+            <li>Volume Changing</li>
+        </ul>
+        break;
+    case "Channels Keep Changing":
+    <ul class="breadcrumb2">
+        <li>Solution Center<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>System Problems<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>Channels Changing</li>
+    </ul>
+        break;
+    case "Inputs Keep Changing":
+    <ul class="breadcrumb2">
+        <li>Solution Center<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>System Problems<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>Inputs Changing</li>
+    </ul>
+        break;
+}
+</nav>
+<article>
+    <header>
+        <h1>@Model.Title</h1>
+    </header>
+    <section>
+        <h3>Problem:</h3>
+        @switch (Model.Title)
+        {
+            case "Volume Keeps Changing":
+                <p>Sometimes or all the time, there is no sound at all or the volume is as loud as it can be, no matter what the source is, and the volume controls don't work.</p>
+                <h3>Solution:</h3>
+                break;
+            case "Channels Keep Changing":
+            <p>Sometimes or all the time, the TV changes channels by itself, and the channel-up and channel-down controls don't work.</p>
+            <h3>Solution:</h3>
+                break;
+            case "Inputs Keep Changing":
+            <p>Sometimes or all the time, the TV changes input sources by itself, and the source controls don't work.</p>
+            <h3>Solution:</h3>
+                break;
+        }
+
+        <p>This kind if thing means there is a defect in the TV, where erroneous commands are being sent to the TV’s control system. The problem is either a faulty proximity-touch key board or push-button board, a faulty board connected in series with it, or a pinched wire going to the board, which is shorting to ground.  These boards are found inside the bezel (frame) in front or along the side of the television, and are the parts of the TV that interface with the viewer, like the push-button controls, or the receiver for the remote control.</p>
+        <p>Disassemble the bezel and disconnect the cable going to the proximity-touch key board or push-button board from the main board. If this stops the problem, you should replace the proximity-touch key board or push-button board. Sometimes these boards come as an assembly with a new cable. A service manual will help you specify the boards you need, and will illustrate how to disassemble the unit.  Sometimes these boards are an integral part of the bezel (frame), so you may need to replace the whole bezel instead.</p>
+        <p>If the problem does not go away when you disconnect the cable, then you may need to replace the main board.<p>
+            <aside id='InLineAdDiv2' style='text-align:center; margin:5px 10px 0px 10px;'></aside>
+        <p>There are two other things that could cause this problem. One is if there is an infrared emitting device in close proximity to the television, such as a motion detector security device or a neon sign. The infrared light coming from these devices could be erroneously picked up by the television and interpreted as a command. The remedy would be to move the television away from these devices.</p>
+        <p>Or if there are any devices connected to the TV using HDMI cables, particularly a cable TV set-top box, it might be that erroneous commands are being sent to the TV via HDMI. Periodically, a cable TV service provider will send software updates from their head-end to their subscriber’s cable boxes. On occasion, these updates may not have all the bugs worked out, and may introduce incompatibility issues with certain makes and models of televisions. The quick fix for this would be to disconnect the HDMI cable and use component video cables instead. But make sure it's not the TV by plugging in a different source (like a DVD player) in to the same HDMI jack on the TV. If the component video cable trick works, contact your cable TV service provider and tell you have a bad cable box. They will need to either update the box with good software or replace your box with one of a different make and model.</p><br />
+    </section>
+</article>

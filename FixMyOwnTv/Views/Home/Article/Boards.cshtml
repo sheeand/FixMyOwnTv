@@ -1,0 +1,73 @@
+﻿<nav>
+    <ul class="breadcrumb">        <li><span class="demo-icon icon-monitor">&#xf032;</span></li>
+        <li>Learning Center<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>Replacing Parts<span style="font-size: 150%;"> &#187;</span> </li>
+        <li>@ViewBag.boardsMenuPick</li>
+    </ul>
+</nav><br />
+<article>
+
+    <header>
+        <h1 itemprop="headline">Replacing Printed Circuit Boards in a TV</h1>
+         
+    </header>
+    <section itemprop="articleBody">
+        <p>
+            Printed circuit boards are fundamentally not that difficult to replace.  First you need to get to them (read the article, <a id="lnkGetTo" href="/GetTo" target="_self">How Do I Get to the Printed Circuit Boards?</a>. Then it’s just a matter of disconnecting the cable connectors from the board, unscrewing it, replacing it with the new one, and then putting everything back together in the reverse order. Depending on the particular board you are replacing, there may be additional things to do before and/or after you replace it.  These steps are mentioned below under <a href="#special">Special Instructions</a>.
+        </p>
+        <h3>Cable Connectors</h3>
+        <p>TVs contain many printed circuit boards. The boards are connected together with cables that are neatly dressed against the TV superstructure. Just about every cable inside of a TV can be disconnected, and completely removed (if necessary). These <strong>cable assemblies</strong> have connectors on each end. The connectors latch themselves to mating connectors on the printed circut boards.</p>
+        <p>Virtually all cable assemblies are engineered such that they will only go one way, that is, they will only fit onto the board connectors to which they were intended.  This makes it foolproof such that even if the cables were completely removed during the board replacement process, and you forgot where they go, there is no way of reconnecting them to the wrong board or connector because they simply wouldn't fit.</p>
+        <p>There are four common types of cables in a TV: regular wire, ribbon wire, flat flexible cable (FFC), and low voltage digital signal (LVDS) cable. Each type of cable has its own kind of connector.</p><br />
+        <h4>Regular Wire</h4>
+        <figure id="picture1"><img alt="Ribbon wire connector" style="zoom: 2; text-align:center;" src="@VirtualPathUtility.ToAbsolute("/Images/Photos/P1050191.jpg")" /><br /></figure>
+        <p>To unlatch cable connectors at the end of regular wires or ribbon wires, depress the latch by squeezing the cable connector with your thumb on the latch.  You may have to rock the connector a little if it is a tight fit. Then pull the cable connector away from its board connector. When you are ready to hook up the connectors to the new board, examine the pins inside of the male end and make sure they are straight.  If you see any crooked pins, gently straighten them using needle nose pliers.  To reseat the connectors you just push the cable connector straight into the printed circuit board connector.  Sometimes you’ll hear a little click sound when the latch keys locks into place.</p><br />
+        <h4>Flat Flexible Cable (FFC)</h4>
+        <figure id="picture2"><img alt="Flat flexible cable connector" style="zoom: 2; text-align:center;" src="@VirtualPathUtility.ToAbsolute("/Images/photos/P1050188.jpg")" /><br /></figure>
+        <p>To unlatch flat flexible cables, gently unsnap and lift up the top part with two fingernails; it will pivot either forward or backward.  The flat cable will then come out easily.  Before connecting it onto the new printed circuit board, observe the corners of the cable.  If there are tiny tabs sticking out on both sides, you must be sure to seat the cable properly so that the tabs fit completely into the little notches made for them in the printed circuit board connector.  Once the cable is seated all the way in, you can close the latch.</p><br />
+        <h4>LVDS Cable</h4>
+        <figure id="picture3"><img alt="LVDS cable connector" style="zoom: 2; text-align:center;" src="@VirtualPathUtility.ToAbsolute("/Images/photos/P1050193a.jpg")" /><br /></figure>
+        <p>LVDS connectors are generally found on the T-CONN printed circuit board in an LCD or LED TV. To unlatch LVDS cables, there are tiny plastic latches on both sides of the cable connector that you will push-in by gently squeezing the connector with your thumb and forefinger.  As you squeeze, rock the connector sideways so it will loosen and come off.  The cable connector will easily snap back in when reconnecting it to the printed circuit board connector.  Sometimes you’ll hear little click sounds when the latches lock into place.</p>
+        <aside id='InLineAdDiv2' style='text-align:center; '></aside>
+        <h3 id="testing">Replacing and Testing</h3>
+        <p>You may need to remove other parts of the TV in order to get to the printed circuit board you want to replace. Just be sure that you put those other parts back in after you replace the board. Double check that you’ve properly reseated every cable connector.</p>
+        <p>With the back cover still removed and the new printed circuit board installed, it is time to test it by turning on the TV. We do this with the back cover off to make sure everything is in good shape before we close it up.</p>
+        <figure>
+            @Html.Partial("Article/DangerHighVoltage")
+        </figure>
+        <p>If the TV has its own stand and the stand was removed, you can put the TV back on its stand and set the TV upright. Plug in the TV’s power cord and turn it on. Make sure you get picture and sound. Some TVs play a melody when you first turn them on. This lets you know that the sound is okay. Press the menu button on the TV.  The menu should appear. You could hook up one of the sources to the TV (like a DVD player) and play a DVD. Make sure there is nothing unusual in the picture.  If all is well, then you can turn off the TV, disconnect the AC (mains) power cord and put the back cover back on.</p>
+        <p>If the screen is not lighting up, or if the menu is not coming up, double check to make sure all of the cables have been reconnected. There is a very small chance you were sent a faulty replacement board. If this is what you suspect, contact the supplier for further instructions.</p>
+        <span id="special"></span>
+        <aside id='InLineAdDiv' style='text-align:center; '></aside>
+        <h3>Special Instructions</h3>
+        <p><span id="underline" style="text-decoration:underline">Important</span>: The following instructions pertain to specific printed circuit boards:</p>
+        <br />
+        <h4>Main Boards for TVs with Built-In Internet Capability</h4>
+        <p>If the TV has built-in Wi-Fi capability, the main board will have a unique MAC address assigned to it.  So, after you replace the main board in the TV, anything that requires the MAC address will need to be updated.  If you’re internet connection is via a wireless router, the wireless router will need to reset.  If you have an account with Netflix or any other internet content provider, you will have to re-register with them as well.</p>
+        <br />
+        <div id="PowerBoards">
+            <h4>Names and Locations of the Power-Related Printed Circuit Boards in Plasma TVs</h4>
+        </div>
+        <p>
+            The power supply board is always closest to the center.  <br />
+            The large board mounted on the left side looking from the back of the TV is known as the Y-main or Y-sustain.<br />
+            The large board mounted on the right side looking from the back of the TV is called the X-main, the Z-board or SS-board.<br />
+        </p>
+        <br />
+        <h4>Replacing Power Supply Boards in Plasma TVs</h4>
+        <br />
+        <figure>@Html.Partial("Article/DangerHighVoltage")</figure>
+        <figure id="imagePot" style="float:left; position:relative; margin:10px;"><img alt="Voltage control potentiometers in a plasma TV" src="@VirtualPathUtility.ToAbsolute("/Images/photos/P1050195.JPG")" style="width:200px;" /></figure><br />
+        <p>After replacing the power board as described in <a href="#testing">Replacing and Testing</a>, you may need to verify that the voltages produced by the board are appropriate for your panel. This will require that the TV be turned on with the back cover removed, and conveniently situated so that you can measure voltages on the power board with your multimeter.</p>
+        <p>First, see if adjustments might be necessary by locating the voltage controls. Observe the power supply board and look for small (usually blue or white) controls.  If you find controls on the board, look carefully to see if they were treated with Lock-Tight, or nail polish, or anything that would indicate that they were set at the factory and not meant to be adjusted.  If so, then your done. Otherwise, you will need to measure specific voltage settings with a multimeter, and make adjustments to these controls if necessary.</p>
+        <p>The two markings on the power board to look for are “Vs” (or "Vsus") and “Va” (or "Ve").  You should find these markings next to their corresponding controls.  Secondly, you must also look for electrical contact points on the board that are marked with the same markings; these are called “test points”.  They will either be points directly on the printed circuit board itself, or places on components mounted on the circuit board.  You will be placing a probe of your multimeter to these test points and measuring voltages.  Sometimes these test point are not clearly identified.  You may only find the test point markings on the board next to certain pins of cable connectors; it is okay to put your probe on the connector where the marking is to measure your voltage.</p>
+        <p>The third place to look for Vs and Va is on a label or sticker located on the panel.  The voltages printed on the sticker are the required values for that specific panel.  You will be measuring the actual voltages, and comparing the measured voltages to the voltage values on the sticker, and (if necessary) adjusting the corresponding controls to obtain the correct voltages.</p>
+        <p>Set the meter to read DC voltage on any scale greater than 200V. Your multimeter should have its black test lead plugged into the meter's black connector, and its red test lead plugged into the meter's red connector.</p>
+        <p>To measure voltage Vs, touch the black test lead to any metal part of the TV, and the red leat to test point Vs. Observe the voltage reading on the meter. If the voltage is within 2 volts of the value specified on the sticker, then no adjustment is necessary. If it is greater than 2 volts from the sticker value, adjust the Vs control until the voltage is within 2 volts of the sticker value.</p>
+        <p>Repeat the same steps for voltage Va.</p>
+        <p>When done, close up the TV in the reverse order that you disassembled it.</p>
+        <br />
+        <br />
+        <br />
+    </section>
+</article>
