@@ -364,23 +364,18 @@ ul.breadcrumb2 li {
 
 
             @media print {
-                #body {
-                    width: 660px;
-                }
 
                 #page {
-                    width: 660px;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                    margin: 0.7in;
                 }
 
                 #header {
-                    width: 660px;
+                    width: 7in;
                 }
 
                 .nav {
                     display: none;
-                    width: 0px;
+                    width: 0in;
                 }
 
                 #rightColumnLarge {
@@ -388,11 +383,11 @@ ul.breadcrumb2 li {
                 }
 
                 #mainContent {
-                    width: 660px;
+                    width: 7in;
                 }
 
                 #footer {
-                    width: 660px;
+                    width: 7in;
                 }
             }
 
