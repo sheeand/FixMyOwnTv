@@ -947,7 +947,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/26/2018 01:48:41</publishTime>
     </File>
     <File Include="Views/Book/Article/shattered.cshtml">
-      <publishTime>06/22/2018 19:01:36</publishTime>
+      <publishTime>02/21/2019 19:58:09</publishTime>
     </File>
     <File Include="Views/Book/Article/size.cshtml">
       <publishTime>04/16/2017 07:57:32</publishTime>

@@ -35,17 +35,17 @@ namespace FixMyOwnTv.Controllers
 
                     if (String.IsNullOrEmpty(article))
                     {
-                        return Redirect(String.Concat("http://", http_host.ToLower()));
+                        return Redirect($"http://{http_host.ToLower()}");
                     }
                     else
                     {
                         if (String.IsNullOrEmpty(title))
                         {
-                            return Redirect(String.Concat("http://", http_host.ToLower(), "/", article.ToLower()));
+                            return Redirect($"http://{http_host.ToLower()}/{article.ToLower()}");
                         }
                         else
                         {
-                            return Redirect(String.Concat("http://", http_host.ToLower(), "/", article.ToLower(), title.ToLower()));
+                            return Redirect($"http://{http_host.ToLower()}/{article.ToLower()}/{title.ToLower()}");
                         }
                     }
                 }
@@ -80,7 +80,7 @@ namespace FixMyOwnTv.Controllers
                                 {
                                     // temporary fix for redundant 'fixmyowntv.com' 
 
-                                    return Redirect(String.Concat("http://", http_host.ToLower()));
+                                    return Redirect($"http://{http_host.ToLower()}");
                                 }
                                 else
                                 {
@@ -88,7 +88,7 @@ namespace FixMyOwnTv.Controllers
                                     {
                                         // title is actually the article
 
-                                        return Redirect(String.Concat("http://", http_host.ToLower()));
+                                        return Redirect($"http://{http_host.ToLower()}");
                                     }
                                     else
                                     {
@@ -98,7 +98,7 @@ namespace FixMyOwnTv.Controllers
                                         {
                                             // path is not all lower case
 
-                                            return Redirect(String.Concat("http://", http_host.ToLower(), "/", article.ToLower()));
+                                            return Redirect($"http://{ http_host.ToLower()}/{article.ToLower()}");
                                         }
                                         else
                                         {
@@ -134,7 +134,7 @@ namespace FixMyOwnTv.Controllers
                                 {
                                     // temporary fix for redundant 'fixmyowntv.com' 
 
-                                    return Redirect(String.Concat("http://", http_host.ToLower()));
+                                    return Redirect($"http://{http_host.ToLower()}");
                                 }
                                 else
                                 {
@@ -142,7 +142,7 @@ namespace FixMyOwnTv.Controllers
                                     {
                                         // title is actually the article
 
-                                        return Redirect(String.Concat("http://", http_host.ToLower(), "/", title.ToLower()));
+                                        return Redirect($"http://{http_host.ToLower()}/{title.ToLower()}");
                                     }
                                     else
                                     {
@@ -152,7 +152,7 @@ namespace FixMyOwnTv.Controllers
                                         {
                                             // path is not all lower case
 
-                                            return Redirect(String.Concat("http://", http_host.ToLower(), "/", article.ToLower(), "/", title.ToLower()));
+                                            return Redirect($"http://{http_host.ToLower()}/{article.ToLower()}/{title.ToLower()}");
                                         }
                                         else
                                         {
@@ -194,7 +194,7 @@ namespace FixMyOwnTv.Controllers
                     {
                         if (article.ToLower().Contains("fixmyowntv"))
                         {
-                            return Redirect(String.Concat("http://", http_host.ToLower()));
+                            return Redirect($"http://{http_host.ToLower()}");
                         }
                         else
 
@@ -204,7 +204,7 @@ namespace FixMyOwnTv.Controllers
 
                             // path is not all lower case
                             {
-                                return Redirect(String.Concat("http://", http_host.ToLower(), "/", article.ToLower()));
+                                return Redirect($"http://{http_host.ToLower()}/{article.ToLower()}");
                             }
                             else
 
@@ -229,7 +229,7 @@ namespace FixMyOwnTv.Controllers
 
                         // title is actually the article
                         {
-                            return Redirect(String.Concat("http://", http_host.ToLower(), "/", title.ToLower()));
+                            return Redirect($"http://{http_host.ToLower()}/{title.ToLower()}");
                         }
                         else
 
@@ -237,7 +237,7 @@ namespace FixMyOwnTv.Controllers
                         {
                             if (article != article.ToLower() || http_host != http_host.ToLower() || title != title.ToLower())
                             {
-                                return Redirect(String.Concat("http://", http_host.ToLower(), "/", article.ToLower(), "/", title.ToLower()));
+                                return Redirect($"http://{http_host.ToLower()}/{article.ToLower()}/{title.ToLower()}");
                             }
                             else
                             {
@@ -339,7 +339,7 @@ namespace FixMyOwnTv.Controllers
             }
             else
             {
-                ViewBag.CanonicalLink = String.Format("http://www.fixmyowntv.com/{0}", article);
+                ViewBag.CanonicalLink = $"http://www.fixmyowntv.com/{article}";
             }
 
             switch (article)

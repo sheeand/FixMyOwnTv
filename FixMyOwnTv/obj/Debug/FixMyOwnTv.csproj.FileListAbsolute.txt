@@ -56,3 +56,37 @@ C:\Users\Administrator\Documents\Visual Studio 2017\Projects\FixMyOwnTv\FixMyOwn
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\FixMyOwnTv\FixMyOwnTv\obj\Debug\FixMyOwnTv.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\FixMyOwnTv\FixMyOwnTv\obj\Debug\FixMyOwnTv.dll
 C:\Users\Administrator\Documents\Visual Studio 2017\Projects\FixMyOwnTv\FixMyOwnTv\obj\Debug\FixMyOwnTv.pdb
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\FixMyOwnTv.dll.config
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\FixMyOwnTv.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\FixMyOwnTv.pdb
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\Antlr3.Runtime.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Net.Http.Formatting.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Http.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Http.WebHost.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Mvc.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Optimization.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Providers.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Razor.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.WebPages.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.WebPages.Razor.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\WebGrease.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Net.Http.Formatting.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Http.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Http.WebHost.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Mvc.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.Razor.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.WebPages.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\bin\System.Web.WebPages.Razor.xml
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\obj\Debug\FixMyOwnTv.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\obj\Debug\FixMyOwnTv.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\obj\Debug\FixMyOwnTv.csproj.CopyComplete
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\obj\Debug\FixMyOwnTv.dll
+C:\Users\Administrator\Documents\Visual_Studio_2017\Projects\FixMyOwnTv_New\FixMyOwnTv\obj\Debug\FixMyOwnTv.pdb
